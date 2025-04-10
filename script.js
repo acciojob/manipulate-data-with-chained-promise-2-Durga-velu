@@ -19,7 +19,7 @@ let myPromise2= new Promise((resolve, reject)=>{
 });
 
 myPromise.then((ans)=>{
-	document.getElementById("input").innerText=ans.join(", ");
+	document.getElementById("output").innerText=ans.join(", ");
 	return myPromise2;
 	
 }).then((res)=>{
