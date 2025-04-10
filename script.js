@@ -15,7 +15,7 @@ let myPromise2= new Promise((resolve, reject)=>{
    setTimeout(()=>{
 	const multi=   arr.filter((array)=> array%2===0).map((num)=>num*2);
 	   resolve(multi)
-   },2000);
+   },3000);
 });
 
 myPromise.then((ans)=>{
