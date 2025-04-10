@@ -23,7 +23,8 @@ myPromise.then((ans)=>{
 	return myPromise2;
 	
 }).then((res)=>{
-	document.getElementById("input").innerText+=`\n${res.join(", ")}`;
+	document.getElementById("output").innerText +=
+		`\n${res.join(", ")}`;
 });
 
 
