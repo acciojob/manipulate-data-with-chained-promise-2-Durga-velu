@@ -1,7 +1,7 @@
 //your JS code here. If required.
 
 
-let arr[1,2,3,4]
+let arr=[1,2,3,4]
 
 let myPromise= new Promise((resolve, reject)=>{
 
