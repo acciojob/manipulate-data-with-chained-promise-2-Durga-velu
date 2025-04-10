@@ -5,7 +5,7 @@ const arr=[1, 2, 3, 4]
 let myPromise= new Promise((resolve, reject)=>{
 
    setTimeout(()=>{
-	   const fiteredArray=arr.filter((array)=>{array%2===0;});
+	   const fiteredArray=arr.filter((array)=>array%2===0);
 	   resolve(fiteredArray)
    },1000);
 
