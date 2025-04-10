@@ -3,7 +3,7 @@
 
 let arr[1,2,3,4]
 
-let myPromise= new promise((resolve, reject)=>{
+let myPromise= new Promise((resolve, reject)=>{
 
    setTimeout(()=>{
 	   const fiteredArray=arr.filter((array)=>{array%2==0;});
@@ -12,7 +12,7 @@ let myPromise= new promise((resolve, reject)=>{
 
 	
 })
-let myPromise2= new promise((resolve, reject)=>{
+let myPromise2= new Promise((resolve, reject)=>{
    setTimeout(()=>{
 	const multi=   arr.filter((array)=> array%2===0).map((num)=>{
 		num*2});
