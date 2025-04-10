@@ -19,12 +19,12 @@ let myPromise2= new Promise((resolve, reject)=>{
 });
 
 myPromise.then((ans)=>{
-	document.getElementById("output").innerText = ans.join(", ");
+	document.getElementById("output").innerText = ans.join(",");
 	return myPromise2;
 	
 }).then((res)=>{
 	document.getElementById("output").innerText +=
-		`\n${res.join(", ")}`;
+		`\n${res.join(",")}`;
 });
 
 
