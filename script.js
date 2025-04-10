@@ -5,33 +5,28 @@ let arr[1,2,3,4]
 
 let myPromise= new promise((resolve, reject)=>{
 
-   setTimeout((resolve)=>{
-	   arr.filter((array)=>{array%2==0;});
+   setTimeout(()=>{
+	   const fiteredArray=arr.filter((array)=>{array%2==0;});
+	   resolve(fiteredArray)
    },1000);
 
 	
 })
 let myPromise2= new promise((resolve, reject)=>{
-let multi=[]
-   setTimeout((resolve)=>{
-	   arr.filter((array)=>{
-		   if(array%2==0){
-			 return  multi.push(array*2)
-		   }
-		   return multi
-	   });
+   setTimeout(()=>{
+	const multi=   arr.filter((array)=> array%2===0).map((num)=>{
+		num*2});
+	   resolve(multi)
    },2000);
-
-	
-})
+});
 
 myPromise.then((ans)=>{
-	document.getElementById("input").innerText=ans;
-	return myPromise2();
+	document.getElementById("input").innerText=ans.join(", ");
+	return myPromise2;
 	
 }).then((res)=>{
-	document.getElementById("input").innerText=res;
-})
+	document.getElementById("input").innerText+=`\n{res.join(", ")}`;
+});
 
 
 
